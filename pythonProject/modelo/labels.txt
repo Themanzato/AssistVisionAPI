@@ -1,0 +1,4 @@
+0 Billetes_20pesos_n
+1 Billetes_20pesos_v
+2 Billetes_50pesos_n
+3 Billetes_50pesos_v
