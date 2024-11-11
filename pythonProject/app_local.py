@@ -87,8 +87,6 @@ def determinar_nombre_color(avg_color):
         return "Blanco"
     elif r > 169 and g > 169 and b > 169 and r < 210 and g < 210 and b < 210:
         return "Gris"
-
-
     else:
         return "indefinido"
 
