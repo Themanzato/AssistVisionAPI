@@ -51,24 +51,50 @@ def determinar_nombre_color(avg_color):
     r, g, b = avg_color[2], avg_color[1], avg_color[0]  # Extraemos los valores R, G, B de OpenCV (BGR)
 
     # Definición de colores básicos con rangos RGB
-    if r > 150 and g < 100 and b < 100:
-        return "rojo"
-    elif r > 200 and g > 200 and b < 100:
-        return "amarillo"
-    elif r < 100 and g > 150 and b < 100:
-        return "verde"
-    elif r < 100 and g < 100 and b > 150:
-        return "azul"
-    elif r > 200 and g < 150 and b < 100:
-        return "naranja"
-    elif r > 150 and g < 100 and b > 150:
-        return "morado"
-    elif r > 150 and g > 150 and b > 150:
-        return "blanco"
-    elif r < 50 and g < 50 and b < 50:
-        return "negro"
-    elif r > 120 and g > 120 and b > 120:
-        return "gris"
+    if r > 150 and r < 255 and g > 0 and g < 70 and b > 0 and b < 70:
+        return "Rojo"
+    elif r < 255 and g > 0 and b < 120 and r > 160 and g < 65 and b > 105:
+        return "Rosa"
+    elif r < 255 and g > 0 and b < 255 and r > 130 and g < 75 and b > 130:
+        return "Morado"
+    elif r < 200 and g > 0 and b < 255 and r > 100 and g < 100 and b > 200:
+        return "Morado"
+    elif r < 170 and g > 0 and b < 255 and r > 70 and g < 70 and b > 100:
+        return "Morado"
+    elif r < 70 and r > 0 and g < 70 and g > 0 and b > 120 and b <255:
+        return "Azul Oscuro"
+    elif r > 0 and g > 100 and b > 150 and r < 75 and g < 255 and b < 255:
+        return "Azul Claro"
+    elif r > 0 and g > 155 and b > 155 and r < 100 and g < 255 and b < 255:
+        return "Azul Cielo"
+    elif r > 0 and g > 155 and b > 0 and r < 100 and g < 255 and b < 100:
+        return "Verde"
+    elif r > 100 and g > 155 and b > 0 and r < 200 and g < 255 and b < 100:
+        return "Verde"
+    elif r < 255 and g < 255 and b > 0 and r > 155 and g > 155 and b < 100:
+        return "Amarillo"
+    elif r < 255 and g < 200 and b > 0 and r > 180 and g > 160 and b < 70:
+        return "Amarillo"
+    elif r < 255 and g < 130 and b > 0 and r > 185 and g > 120 and b < 60:
+        return "Naranja"
+    elif r < 255 and g > 94 and b > 0 and r > 130 and g > 85 and  b < 65:
+        return "Marrón"
+    elif r < 255 and g > 0 and b > 0 and r > 155 and g < 80 and b < 80:
+        return "Rojo"
+    elif r < 100 and g < 100 and b < 100 and r > 0 and g > 0 and b > 0:
+        return "Negro"
+    elif r < 255 and g < 255 and b < 255 and r > 200 and b > 200 and b > 200:
+        return "Blanco"
+    elif r > 169 and g > 169 and b > 169 and r < 210 and g < 210 and b < 210:
+        return "Gris"
+    elif r > 70 and g > 70 and b > 70 and r < 100 and g < 100 and b < 100:
+        return "Gris"
+    elif r > 100 and g > 100 and b > 100 and r < 120 and g < 120 and b < 120:
+        return "Gris"
+    elif r > 120 and g > 120 and b > 120 and r < 140 and g < 140 and b < 140:
+        return "Gris"
+    elif r > 140 and g > 140 and b > 140 and r < 160 and g < 169 and b < 169:
+        return "Gris"
     else:
         return "indefinido"
 
