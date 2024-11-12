@@ -1,4 +1,8 @@
-0 Billetes_20pesos_n
-1 Billetes_20pesos_v
-2 Billetes_50pesos_n
-3 Billetes_50pesos_v
+Billete_20_Pesos_A
+Billete_20_Pesos_B
+Billete_20_Pesos_A_V
+Billete_20_Pesos_B_V
+Billete_50_Pesos_A
+Billete_50_Pesos_B
+Billete_50_Pesos_A_V
+Billete_50_Pesos_B_V
