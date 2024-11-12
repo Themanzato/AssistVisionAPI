@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import cv2
 import numpy as np
+import os
 from ultralytics import YOLO
 
 app = Flask(__name__)
@@ -23,6 +24,9 @@ label_map = {
 
 # Umbral de confianza
 confidence_threshold = 85  # Ajusta este valor según tus necesidades
+
+# Configura el puerto dinámico para el entorno de Render
+port = int(os.environ.get("PORT", 8000))  # Usa el puerto desde la variable de entorno
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -60,5 +64,5 @@ def predict():
 
     return jsonify(predictions)
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=8000)
+if __name__ == "__main__":
+    app.run(debug=False, host="0.0.0.0", port=port)
