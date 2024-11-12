@@ -25,9 +25,6 @@ label_map = {
 # Umbral de confianza
 confidence_threshold = 85  # Ajusta este valor según tus necesidades
 
-# Configura el puerto dinámico para el entorno de Render
-port = int(os.environ.get("PORT", 8000))  # Usa el puerto desde la variable de entorno
-
 @app.route("/predict", methods=["POST"])
 def predict():
     if "image" not in request.files:
@@ -65,4 +62,4 @@ def predict():
     return jsonify(predictions)
 
 if __name__ == "__main__":
-    app.run(debug=False, host="0.0.0.0", port=port)
+    app.run(debug=False, host="0.0.0.0", port=8001)
