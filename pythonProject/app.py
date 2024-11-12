@@ -147,6 +147,9 @@ def determinar_nombre_color(avg_color):
         return "Vino"
     elif r >= 40 and r <= 60 and g >= 5 and g <= 20 and b >= 5 and b <= 20:
         return "Vino"
+    elif r > 10 and r < 40 and g > 70 and g < 90 and b > 160 and b < 190:
+        return "Azul"
+
     elif r > 30 and g > 30 and b > 50 and r < 70 and g < 50 and b < 100:
         return "Azul Marino"
     elif r > 60 and g > 60 and b > 120 and r < 100 and g < 100 and b < 150:
@@ -160,6 +163,8 @@ def determinar_nombre_color(avg_color):
     elif r > 50 and g < 30 and b > 20 and r < 70 and g < 30 and b < 50:
         return "Vino"
     elif r > 60 and g < 50 and b > 60 and r < 80 and g < 50 and b < 80:
+        return "Morado"
+    elif r > 160 and g > 130 and b > 150 and r < 180 and g < 150 and b < 170:
         return "Morado"
     elif r > 240 and g > 170 and b < 120 and r < 255 and g < 200 and b < 120:
         return "Naranja"

@@ -92,6 +92,8 @@ def determinar_nombre_color(avg_color):
         return "Dorado"
     elif r >= 140 and r <= 170 and g >= 110 and g <= 140 and b >= 60 and b <= 90:
         return "Café"
+    elif r > 100 and g > 80 and b > 40 and r < 120 and g < 100 and b < 60:
+        return "Café"
     elif r > 120 and g > 100 and b < 50 and r < 130 and g < 120 and b < 60:
         return "Café"
     elif r >= 150 and r <= 170 and g >= 150 and g <= 170 and b >= 140 and b <= 160:
@@ -112,6 +114,8 @@ def determinar_nombre_color(avg_color):
         return "Marrón"
     elif r >= 100 and r <= 120 and g >= 90 and g <= 110 and b >= 60 and b <= 80:
         return "Marrón"
+    elif r > 140 and g > 50 and b > 20 and r < 160 and g < 70 and b < 40:
+        return "Marrón"
     elif r >= 140 and r <= 150 and g >= 130 and g <= 140 and b >= 120 and b <= 130:
         return "Gris"
     elif r >= 150 and r <= 170 and g >= 180 and g <= 200 and b >= 100 and b <= 120:
@@ -130,6 +134,10 @@ def determinar_nombre_color(avg_color):
         return "Gris"
     elif r > 130 and g > 120 and b > 160 and r < 140 and g < 130 and b < 170:
         return "Gris"
+    elif r > 180 and g > 170 and b > 130 and r < 200 and g < 190 and b < 160:
+        return "Gris Claro"
+    elif r > 190 and g > 180 and b > 140 and r < 210 and g < 200 and b < 160:
+        return "Gris Claro"
     elif r >= 65 and r <= 80 and g >= 10 and g <= 25 and b >= 10 and b <= 25:
         return "Vino"
     elif r >= 90 and r <= 100 and g >= 15 and g <= 30 and b >= 10 and b <= 30:
@@ -151,6 +159,8 @@ def determinar_nombre_color(avg_color):
     elif r > 60 and g < 50 and b > 60 and r < 80 and g < 50 and b < 80:
         return "Morado"
     elif r > 240 and g > 170 and b < 120 and r < 255 and g < 200 and b < 120:
+        return "Naranja"
+    elif r > 190 and g > 80 and b > 30 and r < 200 and g < 100 and b < 50:
         return "Naranja"
     elif r > 190 and g > 100 and b > 120 and r < 210 and g < 130 and b < 150:
         return "Rosa"
