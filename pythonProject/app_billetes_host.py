@@ -55,7 +55,6 @@ def predict():
                 }
             })
 
-    # Verifica si no se detectaron billetes con suficiente confianza
     if not predictions:
         return jsonify({"message": "No se detectó ningún billete con suficiente confianza en la imagen"}), 200
 
